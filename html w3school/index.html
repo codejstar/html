@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>html test</title>
+    <link rel="icon" type="image/x-icon" href="favicon_io/apple-touch-icon.png">
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited{
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover{
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active{
+            color: yellow;
+            background-color:transparent;
+            text-decoration: none;
+        }
+
+         #one{
+            background-image: url('image2.jpg');
+        }
+
+        table, th,td{
+          /* border-bottom: 1px solid black; */
+          border: 1px solid black;
+          border-collapse: collapse;
+
+        }
+
+        /* td,th{
+            border-style: groove;
+            border-color: #96D4D4;
+            background-color: #96D4D4;
+            border-radius: 10px;
+        } */
+
+        td,th{
+            padding: 15px;
+        }
+
+      /* Zebra Striped table */
+        tr:nth-child(even){
+            background-color: #D6EEEE;
+        }
+
+        td:nth-child(even),th:nth-child(even){
+            background-color: #D6EEEE;
+        }
+
+        tr:hover{
+            background-color: #D6EEEE;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1 is most importent heading  tag
+         h6 is least importent heading tag-->
+    <h1>this is heading</h1> 
+    <p style="color:yellow;" title="in this tag we use inline css">this paragraph</p>
+
+    <!-- links define with the <a> tag -->
+        <a href="#">This is a link</a>
+    <br/>
+    <!-- html image tag -->
+    <img src="image2.jpg" alt="library image" width="100px" height="100px" title="click on it"/>
+
+    <!-- HTML is not case sensitive -->
+     <!-- pre tag "preformatted tag"-->
+     <pre>
+ hello everyone one . 
+ this is my first code. 
+ however i am going a long way. 
+ have a safe journy. 
+     </pre>
+
+     <!-- html style tag  -->
+     <h1 style="color:red; background-color: powderblue; width: 200px; font-family: Verdana;">i am red</h1>
+     <h1 style="color:blue; font-size: 300%;">i am blue</h1>
+     <h1 style="color:black; text-align: center;">i am big</h1>
+
+     <!-- HTML formatting elements like <b> <i> <strong> <em> <mark> <small> <del> <ins> <sub> <sup> -->
+        <pre>
+            <b style="font-size: 200%;">this is bold tag</b>
+            <strong style="font-size: 200%;">this is strong tag</strong>
+            <i style="font-size: 200%;">this is italic tag</i>
+            <em style="font-size: 200%">this text is emphasized </em>
+            <small>this is a samall tag.</small>
+            <b style="font-size:200%">this is a <mark>mark</mark> tag.</b>
+            <b style="font-size: 200%;">this is a delete tag. my favorate color is <del>blue</del> red.</b>
+            <b style="font-size:200%">this is a inserted tag. my favorate color is <del>blue</del> <ins>red</ins>.</b>
+            <b style="font-size:200%">This is <sub>subripted</sub> for example a<sub>3</sub></b>
+            <b style="font-size:200%">This is <sup>superscripted</sup> for example a<sup>3</sup></b>
+        </pre>
+
+    <!-- blockquote -->
+    <pre>
+         <h1>         This is hadding from WWf site</h1>
+      <blockquote cite="#" style="font-size: 200%;">
+           <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Esse ex temporibus, voluptas ab deserunt quam dolores numquam in
+              omnis molestias similique perferendis sit fugiat
+             dignissimos aperiam excepturi, error aspernatur officia.</b> </blockquote>
+    </pre>
+
+     <!-- Short quotations -->
+    <pre> 
+        <p style="font-size:200%">WWf's goal is to: <q>Build a future where people live in harmony wiht nature.</q></p>
+    </pre>
+
+    <!-- the HTML <abbr> tag defines an abbreviation or an acronym, like "HTML","CSS","Mr.","Dr.","ASAP","ATM" -->
+    <p style="font-size: 200%;">The <abbr title="World Health Orgaaninzation">WHO</abbr> was founded in 1948. </p>
+  
+    <!-- address tag -->
+    <p style="font-size:200%"> The HTMl address element defines contact information (atutor/owner) of a document or article.</p>
+    <address style="font-size: 200%;">
+        Written by John Doe.<br>
+        Visit us at: <br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <!-- <cite> tag usually renders in italic . the HTML <cyte> tag defines the of a creatie work (eg. a book, a poem etc.) -->
+        <p style="font-size: 200%; font-family:Arial, Helvetica, sans-serif;"><cite>The Scream</cite> by Edvard Munch. Pained in 1893.</p>
+     
+        <!-- html color -->
+        <h1 style="background-color: rgba(255,99,71,0.5);">rgba color</h1>
+        <h1 style="background-color: rgba(60,60,60,0.5);">rgba color</h1>
+        <h1 style="background-color: rgba(180,180,180);">rgba color</h1>
+        <h1 style="background-color: hsl(8,100%,64%);">hsl color</h1>
+        <h1 style="background-color:#ff6347">HEX color</h1>
+
+    <!-- border , padding , margins-->
+        <p style="border: 2px dashed powderblue; padding: 30px; margin: 20px;">this is a border tag.</p>
+    
+    <!-- links in html unvisited link , visited link , active link -->
+    <pre>
+        <a href="https://www.youtube.com/" target="_blank">link</a>
+        <a href="https://www.youtube.com/" target="_parent">link</a>
+        <a href="https://www.youtube.com/" target="_top">link</a>
+        <a href="https://www.youtube.com/" target="_self">link</a>
+    </pre>
+    <!-- two type of url
+          absolute URL -> a full web address like " https://www"
+          relative URL -> without the "https://www" part
+    -->
+    
+    <a href="https://www.youtube.com/" target="_blank"><img src="image2.jpg" alt="" style="width: 100px; height: 100px;" title="click here"></a>
+    
+    <!-- button as a link -->
+    <button onclick="document.location='https://www.youtube.com/'">HTML toturial</button><br>
+    <a href="https://www.youtube.com/" target="_blank">unvisited link</a>
+
+    <!-- create a bookmark in html -->
+    <p><a href="#c4">jump to c4</a></p>
+    <p><a href="#c5">jump to c5</a></p>
+
+    <h1>this is chapter 1</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo quaerat ipsa minima ex nisi quod expedita alias voluptatibus autem inventore nesciunt eligendi odio animi repellat minus reprehenderit, aliquam vitae eos.</p>
+
+     <h1>this is chapter 2</h1>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque repellendus repudiandae cupiditate laudantium quam blanditiis perspiciatis ipsum odio molestias libero aut, nam quae rem corporis ad, repellat voluptas ratione. Commodi.</p>
+     
+     <h1>this is chapter 3</h1>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, temporibus! Fuga facere consequatur deserunt, aliquam est, doloribus iusto quibusdam, voluptatem officia porro ea quasi dolor illo in incidunt necessitatibus odit.</p>
+     
+     <h1 id="c4">this is chapter 4</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi architecto dolorem minima eaque aut placeat aspernatur velit soluta, eveniet atque quae tempore quibusdam. Eveniet ipsam aperiam ipsum deserunt reprehenderit!</p>
+     
+     <h1 id="c5">this is chapter 5</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut iusto ex fuga voluptatibus architecto iste nisi, ab illo quod nihil, repellat, natus amet facere? Obcaecati labore accusantium exercitationem soluta unde!</p>
+
+     <!-- float a image -->
+     <h2><strong>Floating a image</strong></h2>
+     <p><img src="image2.jpg" alt="image" style="float: right;width:100px;height: 100px;">
+     <pre>
+         A paragraph with floating picture A.
+         A paragraph with floating picture A.
+         A paragraph with floatign picture A.
+     </pre>
+    </p>
+
+    <h2><strong>Floating a image</strong></h2>
+     <p><img src="image2.jpg" alt="image" style="float: left;width:100px;height: 100px;">
+     <pre>
+         A paragraph with floating picture A.
+         A paragraph with floating picture A.
+         A paragraph with floatign picture A.
+     </pre>
+    </p>
+     <br>
+    <!-- common image formate is APNG ,GIF(.gif), ICO(micrsoft image), JPEG(joint photographic expert group image), PNG(portable Network Graphics), SVG(Scalable Vector Graphics)-->
+    
+    <!-- background image -->
+    <p id="one">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus omnis 
+        ratione iusto obcaecati recusandae dolorem modi aspernatur? Similique quo 
+        magni dolorum eum vitae! Laborum fugiat illum reiciendis perferendis amet eveniet.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus omnis 
+        ratione iusto obcaecati recusandae dolorem modi aspernatur? Similique quo 
+        magni dolorum eum vitae! Laborum fugiat illum reiciendis perferendis amet eveniet.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus omnis 
+        ratione iusto obcaecati recusandae dolorem modi aspernatur? Similique quo 
+        magni dolorum eum vitae! Laborum fugiat illum reiciendis perferendis amet eveniet.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus omnis 
+        ratione iusto obcaecati recusandae dolorem modi aspernatur? Similique quo 
+        magni dolorum eum vitae! Laborum fugiat illum reiciendis perferendis amet eveniet.
+    </p>
+
+    <!-- picture element allows you to display different pictures for different devices or screen sizes -->
+    <picture>
+         <!-- <source media="(min-width: 650px)" srcset="image2.jpg" sizes=""> -->
+        <source media="(min-width: 450px)" srcset="image2.jpg" sizes="">
+        <source media="(min-width: 850px)" srcset="image1.jpg" sizes="">
+        <img src="image1.jpg" alt="picture tag">
+    </picture>
+     
+    <!-- html table -->
+    <table style="width: 100%;">
+        <tr>
+            <th style="width: 33%;">Company</th>
+            <th style="width: 33%;">Contact</th>
+            <th style="width: 33%;">Country</th>
+        </tr>
+        <tr style="height: 100px;">
+            <!-- td is table data -->
+            <td>Alfres Futterkiste</td> 
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Fracisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+     <br>
+     <!-- vertical table -->
+     <h2>Vertical header</h2>
+    <table>
+        <tr>
+            <th>Company</th>
+            <td>Alfres Futterkiste</td> 
+            <td>Centro comercial Moctezuma</td>
+        </tr>
+        <tr>
+            <!-- td is table data -->
+            <th>Contact</th>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <th style="width: 33%; text-align: left;">Country</th> 
+            <td>Fracisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <h2>Colspan header</h2>
+    <table>
+        <tr>
+            <th colspan="2">Company</th>
+            <th>age</th> 
+        </tr>
+        <tr>
+            <!-- td is table data -->
+            <td>Contact</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Country</td> 
+            <td>Fracisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    
+    <h2>table colspan</h2>
+    <table>
+        <caption>Monthly savings</caption>
+        <tr>
+            <th colspan="2">Company</th>
+            <th>age</th> 
+        </tr>
+        <tr>
+            <!-- td is table data -->
+            <td>Contact</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Country</td> 
+            <td>Fracisco Chang</td>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+    <h2>table rowspan</h2>
+    <table>
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Company</th>
+            <td>age</td> 
+        </tr>
+        <tr>
+            <th rowspan="2">Maria Anders</th>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Mexico</td>
+        </tr>
+    </table>
+
+      <br>
+    <table>
+        <tr>
+            <th>sun</th>
+            <th>mon</th>
+            <th>tue</th>
+            <th>wed</th>
+            <th>thu</th>
+            <th>fri</th>
+            <th>sat</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html> 
